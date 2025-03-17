@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetPulse - Network Status</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-layer layer1"></div>
+    <div class="background-layer layer2"></div>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="tab-header">NetPulse</div>
+        <div class="tab-content">
+            <p>Monitor network status!</p>
+            <div class="status-display">
+                Status: <span id="status">Offline</span><br>
+                Latency: <span id="latency">0 ms</span><br>
+                Uptime: <span id="uptime">0s</span>
+            </div>
+            <button onclick="toggleNetwork()">Toggle Network</button>
+            <div class="history">
+                <h3>Status History</h3>
+                <ul id="statusHistory"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
